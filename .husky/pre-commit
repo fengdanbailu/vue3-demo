@@ -1,0 +1,12 @@
+###
+ # @Author: gm.chen
+ # @Date: 2021-05-02 23:05:45
+ # @LastEditors: gm.chen
+ # @LastEditTime: 2021-05-02 23:21:08
+ # @Description: file content
+ # @FilePath: /vue3-demo/.husky/pre-commit
+###
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+eslint --fix ./src --ext .vue,.js,.ts
