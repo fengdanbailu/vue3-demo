@@ -2,18 +2,37 @@
  * @Author: gm.chen
  * @Date: 2021-05-02 22:18:40
  * @LastEditors: gm.chen
- * @LastEditTime: 2021-05-02 22:25:14
+ * @LastEditTime: 2021-05-09 07:42:33
  * @Description: file content
  * @FilePath: /vue3-demo/vite.config.ts
  */
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
+import styleImport from 'vite-plugin-style-import'
 // 如果编辑器提示 path 模块找不到，则可以安装一下 @types/node -> npm i @types/node -D
 import { resolve } from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    // 按需载入 Element Plus
+    styleImport({
+      libs: [
+        {
+          libraryName: 'element-plus',
+          esModule: true,
+          ensureStyleFile: true,
+          resolveStyle: (name) => {
+            return `element-plus/lib/theme-chalk/${name}.css`
+          },
+          resolveComponent: (name) => {
+            return `element-plus/lib/${name}`
+          }
+        }
+      ]
+    })
+  ],
   resolve: {
     alias: {
       '@': resolve(__dirname, 'src') // 设置 `@` 指向 `src` 目录
@@ -28,11 +47,11 @@ export default defineConfig({
     // 设置代理，根据我们项目实际情况配置
     // proxy: {
     //   '/api': {
-    //     target: 'http://xxx.xxx.xxx.xxx:8000',
+    //     target: 'http://xxx.xxx.xxx.xxx:x000',
     //     changeOrigin: true,
     //     secure: false,
     //     rewrite: (path) => path.replace('/api/', '/')
     //   }
-    // }
+    // },
   }
 })

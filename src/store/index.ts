@@ -2,7 +2,7 @@
  * @Author: gm.chen
  * @Date: 2021-05-02 22:35:41
  * @LastEditors: gm.chen
- * @LastEditTime: 2021-05-02 22:35:41
+ * @LastEditTime: 2021-05-09 07:06:46
  * @Description: file content
  * @FilePath: /vue3-demo/src/store/index.ts
  */

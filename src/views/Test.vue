@@ -1,3 +1,11 @@
+<!--
+ * @Author: gm.chen
+ * @Date: 2021-05-02 23:23:44
+ * @LastEditors: gm.chen
+ * @LastEditTime: 2021-05-09 07:29:23
+ * @Description: file content
+ * @FilePath: /vue3-demo/src/views/Test.vue
+-->
 <template>
   <div class="test-container page-container">
     <div class="page-title">Unit Test Page</div>
@@ -20,3 +28,11 @@ export default defineComponent({
   }
 })
 </script>
+
+<style scoped lang="stylus">
+button {
+  cursor pointer
+  font-size 20px
+  padding 5px
+}
+</style>

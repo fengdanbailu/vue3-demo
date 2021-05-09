@@ -1,3 +1,11 @@
+<!--
+ * @Author: gm.chen
+ * @Date: 2021-05-02 22:18:40
+ * @LastEditors: gm.chen
+ * @LastEditTime: 2021-05-09 07:06:38
+ * @Description: file content
+ * @FilePath: /vue3-demo/src/components/HelloWorld.vue
+-->
 <template>
   <h1>{{ msg }}</h1>
 
@@ -31,6 +39,7 @@
 
 <script lang="ts">
 import { ref, defineComponent } from 'vue'
+
 export default defineComponent({
   name: 'HelloWorld',
   props: {

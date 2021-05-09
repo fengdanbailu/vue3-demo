@@ -1,6 +1,16 @@
+<!--
+ * @Author: gm.chen
+ * @Date: 2021-05-09 01:21:28
+ * @LastEditors: gm.chen
+ * @LastEditTime: 2021-05-09 07:07:25
+ * @Description: file content
+ * @FilePath: /vue3-demo/src/App.vue
+-->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png" />
-  <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  <div>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Hello Vue 3 + TypeScript + Vite" />
+  </div>
 </template>
 
 <script lang="ts">
