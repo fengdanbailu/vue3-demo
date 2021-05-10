@@ -21,6 +21,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.32.12",
     "stylus": "^0.54.8",
+    "vite-plugin-style-import": "^0.10.0",
     "vue": "^3.0.5",
     "vue-router": "4",
     "vuex": "^4.0.0"
