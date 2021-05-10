@@ -2,7 +2,7 @@
  * @Author: gm.chen
  * @Date: 2021-05-02 22:35:41
  * @LastEditors: gm.chen
- * @LastEditTime: 2021-05-09 07:06:46
+ * @LastEditTime: 2021-05-09 08:02:47
  * @Description: file content
  * @FilePath: /vue3-demo/src/store/index.ts
  */
@@ -19,7 +19,7 @@ export default createStore({
   },
   mutations: {
     increment(state: typeof defaultState) {
-      state.count++
+      state.count += 1
     }
   },
   actions: {
