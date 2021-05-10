@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vite build",
     "serve": "vite preview",
     "prettier": "npx prettier --write .",
     "prepare": "husky install",
@@ -21,6 +21,7 @@
     "prettier": "^2.2.1",
     "sass": "^1.32.12",
     "stylus": "^0.54.8",
+    "vite-plugin-style-import": "^0.10.0",
     "vue": "^3.0.5",
     "vue-router": "4",
     "vuex": "^4.0.0"
